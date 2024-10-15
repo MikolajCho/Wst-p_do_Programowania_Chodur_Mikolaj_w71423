@@ -91,3 +91,8 @@ droga = random.randint(1,15408)
 litry = int(droga)/100
 cena = litry * 6.5
 print(f"Przejeżdżając {droga}km, spalisz {litry} litrów paliwa, a szacowany koszt podróży wyniesie {cena}zł")
+
+#Dlaczego wartości przez nią zwracane są pseudolosowe, a nie prawdziwie losowe? –poszukaj odpowiedzi i dołącz ją w komentarzu kodu
+'''
+Wartości są pseudolosowe, ponieważ komputer nie rozpoznaje koncepcji losowości tak jak człowiek i musi on wybrać liczby kożystając z algorytmu, 
+gdzie liczby są generowane w sposób deterministyczny, czyli przy tym samym ustawieniu początkowym będą się powtarzać'''
