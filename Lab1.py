@@ -43,4 +43,51 @@ print((bool(0)),"\n",# False
 )
 '''
 
-#Zadanie 3
+#Zadanie 3 - Uzupełnij w kodzie zmienne imie, kierunek, uczelnia swoimi danymi, a następnie wyświetl je w formie pełnych zdań.
+'''
+imie = "Mikołaj"
+kierunek = "Informatyka"
+uczelnia = "WSIiZ"
+
+print("Cześć. Nazywam się " + imie + ". Studiuję kierunek " + kierunek + ", na uczelni " + uczelnia +".")
+'''
+
+#Zadanie 4 - Napisz program, który poprosi użytkownika o informacje na temat jego imienia, a następnie się z nim przywita.
+'''
+print ("Jak się nazywasz?")
+imie = input()
+print(f"Cześć {imie}, witaj na zajęciach")
+'''
+
+#Zadanie 5 - Napisz skrypt, który pobiera długości boków prostokąta, a następnie oblicza jego pole i obwód oraz wyświetla wyniki na ekranie.
+'''
+a = input("Podaj długość pierwszego boku: ")
+b = input("Podaj długość drugiego boku: ")
+print(f"Pole prostokąta to: {int(a)*int(b)}")
+print(f"Obwód prostokąta to: {int(a)*2 + int(b)*2}")
+'''
+
+#
+'''Zadanie 6 - Napisz skrypt, który pobiera od użytkownika drogę pokonaną przez samochód oraz średnie
+spalanie (w litrach na 100 km) i wyświetli informację o przewidywanym zużyciu paliwa oraz
+o szacowanych kosztach podróży (cena paliwa 6.5 zł/l).'''
+
+'''
+a = input("Podaj planowaną długość drogi w kilometrach: ")
+b = input("Podaj średnie spalanie samochodu w litrach na 100km: ")
+c = int(a)*(int(b)/100)
+print(f"Przewidywane zużycie paliwa to: {c}l")
+print(f"Szacowane koszty podróży to: {c*6.5}zł")
+'''
+
+#
+'''Zadanie 7 - Napisz skrypt, który pobiera od użytkownika średnie spalanie jego samochodu (w litrach na
+100 km) i wyświetli informację o przewidywanym zużyciu paliwa oraz o szacowanych
+kosztach podróży (cena paliwa 6.5 zł/l), podczas gdy droga będzie generowana losowo.'''
+
+import random
+a = input("Podaj średnie spalanie samochodu w litrach na 100km: ")
+droga = random.randint(1,15408)
+litry = int(droga)/100
+cena = litry * 6.5
+print(f"Przejeżdżając {droga}km, spalisz {litry} litrów paliwa, a szacowany koszt podróży wyniesie {cena}zł")
