@@ -40,7 +40,44 @@ print(x, y, z)
 
 '''Zadanie 11 - Napisz program rozwiązywania równania kwadratowego 𝑎𝑎𝑥𝑥2 + 𝑏𝑏𝑏𝑏 + 𝑐𝑐 = 0, gdzie a, b i c
 są współczynnikami podawanymi przez użytkownika.'''
+'''
+import math
 
 a = int(input("a: "))
 b = int(input("b: "))
 c = int(input("c: "))
+
+delta = b**2 + 4*a*c
+if delta > 0:
+x1 = (b)
+x2 = 
+if delta > 0:
+    elif delta == 0
+else:
+
+print(a)
+'''
+
+#PĘTLE Zadanie 1
+'''
+for i in range(1, 101):
+    print(i)'''
+'''
+for i in range (100, -1, -1):
+    print(i)
+    '''
+'''
+for i in range (7, 78, 7):
+    print(i)
+'''
+'''
+    for i in range (20, -1, -2):
+    print(i)
+    '''
+#Zadanie 2 
+
+ile = int(input("ile lini gwiazdek wyświetlić?: "))
+for i in range(ile):
+    for j in range (ile - i):
+        print("*", end=" ")
+    print(" ")
