@@ -75,9 +75,17 @@ for i in range (7, 78, 7):
     print(i)
     '''
 #Zadanie 2 
-
+'''
 ile = int(input("ile lini gwiazdek wyświetlić?: "))
 for i in range(ile):
     for j in range (ile - i):
         print("*", end=" ")
     print(" ")
+'''
+#Zadanie 5
+tekst = "Rzeszów jest piękny"
+print(tekst[0])
+print(tekst[6])
+print(tekst[9])
+print(tekst[12])
+print(tekst[1])
