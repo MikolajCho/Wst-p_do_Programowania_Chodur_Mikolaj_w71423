@@ -141,101 +141,107 @@ rzeczywistych podawanych przez użytkownika:'''
 
 '''LABORATORIUM 2 - ZADANIA 1, 2, 3, 4, 5, 6, 7'''
 
-# Zadanie 1 - Ciągi liczb
-# a) 1 do 100
-'''
-for i in range(1, 101):
-    print(i, end=", ")
-print()
+# # Zadanie 1 - Ciągi liczb
+# # a) 1 do 100
 
-# b) 100 do 0
-for i in range(100, -1, -1):
-    print(i, end=", ")
-print()
+# for i in range(1, 101):
+#     print(i, end=", ")
+# print()
 
-# c) 7, 14, ..., 77
-for i in range(7, 78, 7):
-    print(i, end=", ")
-print()
+# # b) 100 do 0
+# for i in range(100, -1, -1):
+#     print(i, end=", ")
+# print()
 
-# d) 20, 18, ..., 0
-for i in range(20, -1, -2):
-    print(i, end=", ")
-print()
+# # c) 7, 14, ..., 77
+# for i in range(7, 78, 7):
+#     print(i, end=", ")
+# print()
 
-# Zadanie 2 - Gwiazdki
-n = int(input("Podaj liczbę wierszy: "))
-
-# a) Prostokąt
-print("\nWzór a:")
-for i in range(n):
-    print("* " * 3)
-
-# b) Trójkąt rosnący
-print("\nWzór b:")
-for i in range(1, n + 1):
-    print("* " * i)
-
-# c) 
+# # d) 20, 18, ..., 0
+# for i in range(20, -1, -2):
+#     print(i, end=", ")
+# print()
 
 
+# # Zadanie 2 - Gwiazdki
+# n = int(input("Podaj liczbę wierszy: "))
 
-'''
-'''
+# # a) Prostokąt
+# print("\nWzór a:")
+# for i in range(n):
+#     print("* " * 3)
 
-# Zadanie 3 - Ciąg arytmetyczny
-n = int(input("\nPodaj liczbę elementów (n): "))
-a = float(input("Podaj pierwszy element (a): "))
-r = float(input("Podaj różnicę (r): "))
+# # b) Trójkąt rosnący
+# print("\nWzór b:")
+# for i in range(1, n + 1):
+#     print("* " * i)
 
-for i in range(n):
-    print(a + i * r, end=", ")
-print()
+# # c) Trójkąt rosnący wyrównany do prawej
+# print("\nWzór c:")
+# for i in range(1, n + 1):
+#     print(" " * (n - i) + "* " * i)
 
-# Zadanie 4 - Silnia
-n = int(input("\nPodaj liczbę do obliczenia silni: "))
-silnia = 1
-for i in range(1, n + 1):
-    silnia *= i
-print(f"{n}! = {silnia}")
 
-# Zadanie 5 - Indeksowanie tekstu
-tekst = "Rzeszów jest piękny"
-print(f"a) Pierwsza litera: {tekst[0]}")
-print(f"b) Wybrane litery: {tekst[6]}, {tekst[9]}, {tekst[12]}, {tekst[1]}")
 
-# Zadanie 6 - Indeksowanie tekstu
-tresc = "Python jest super"
-print(f"a) Znak zerowy: {tresc[0]}")
-print(f"b) Ostatni znak: {tresc[-1]}")
-print(f"c) Co drugi: {tresc[::2]}")
-print(f"d) Co trzeci od pierwszego: {tresc[1::3]}")
-print(f"e) Od 10 do końca: {tresc[10:]}")
-print(f"f) Od końca: {tresc[::-1]}")
+
+# # Zadanie 3 - Ciąg arytmetyczny
+# n = int(input("\nPodaj liczbę elementów (n): "))
+# a = float(input("Podaj pierwszy element (a): "))
+# r = float(input("Podaj różnicę (r): "))
+
+# for i in range(n):
+#     print(a + i * r, end=", ")
+# print()
+
+
+# # Zadanie 4 - Silnia
+# n = int(input("\nPodaj liczbę do obliczenia silni: "))
+# silnia = 1
+# for i in range(1, n + 1):
+#     silnia *= i
+# print(f"{n}! = {silnia}")
+
+
+# # Zadanie 5 - Indeksowanie tekstu
+# tekst = "Rzeszów jest piękny"
+# print(f"a) Pierwsza litera: {tekst[0]}")
+# print(f"b) Wybrane litery: {tekst[6]}, {tekst[9]}, {tekst[12]}, {tekst[1]}")
+
+
+# # Zadanie 6 - Indeksowanie tekstu
+# tresc = "Python jest super"
+# print(f"a) Znak zerowy: {tresc[0]}")
+# print(f"b) Ostatni znak: {tresc[-1]}")
+# print(f"c) Co drugi: {tresc[::2]}")
+# print(f"d) Co trzeci od pierwszego: {tresc[1::3]}")
+# print(f"e) Od 10 do końca: {tresc[10:]}")
+# print(f"f) Od końca: {tresc[::-1]}")
+
 
 # Zadanie 7 - Operacje na łańcuchach
 # a)
-imie = input("\nPodaj imię: ")
-print(f"Witaj {imie}")
+# imie = input("\nPodaj imię: ")
+# print(f"Witaj {imie}")
 
-# b)
-wiek = input("Podaj wiek: ")
-print(f"Twój wiek to: {wiek}")
+# # b)
+# wiek = input("Podaj wiek: ")
+# print(f"Twój wiek to: {wiek}")
 
-# c)
-imie = input("Podaj imię: ")
-nazwisko = input("Podaj nazwisko: ")
-print(f"Inicjały: {imie[0]}{nazwisko[0]}")
+# # c)
+# imie = input("Podaj imię: ")
+# nazwisko = input("Podaj nazwisko: ")
+# print(f"Inicjały: {imie[0]}{nazwisko[0]}")
 
-# d)
-lancuch = input("Podaj łańcuch: ")
-print(lancuch * 5)
+# # d)
+# lancuch = input("Podaj łańcuch: ")
+# print(lancuch * 5)
 
-# e)
-lancuch1 = input("Podaj pierwszy łańcuch: ")
-lancuch2 = input("Podaj drugi łańcuch: ")
-lancuch3 = lancuch1 + lancuch2
-print(f"Połączone łańcuchy: {lancuch3}")
+# # e)
+# lancuch1 = input("Podaj pierwszy łańcuch: ")
+# lancuch2 = input("Podaj drugi łańcuch: ")
+# lancuch3 = lancuch1 + lancuch2
+# print(f"Połączone łańcuchy: {lancuch3}")
 
 # f)
 lancuch1 = input("Podaj pierwszy łańcuch: ")
@@ -244,4 +250,3 @@ pol1 = len(lancuch1) // 2
 pol2 = len(lancuch2) // 2
 lancuch3 = lancuch1[:pol1] + lancuch2[pol2:]
 print(f"Nowy łańcuch: {lancuch3}")
-'''
