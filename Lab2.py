@@ -1,140 +1,149 @@
 #LABORATORIUM 1 - ZADANIA 8, 9, 10, 11, 12, 13, 14
 
 #Zadanie 8 - Napisz program weryfikujący czy użytkownik jest pełnoletni.
-'''
-wiek = int(input("Podaj swój wiek"))
-if wiek >= 18:
-    print("Użytkownik jest pełnoletni")
-else:
-    print("Użytkownik nie jest pełnoletni")
-'''
+
+# wiek = int(input("Podaj swój wiek: "))
+# if wiek >= 18:
+#     print("Użytkownik jest pełnoletni")
+# else:
+#     print("Użytkownik nie jest pełnoletni")
+
 
 #Zadanie 9 - Stwórz automatyczny cennik biletowy według warunków:
-'''
-wiek = int(input("Podaj swój wiek: "))
 
-if wiek <= 4:
-    print("Wstęp jest bezpłatny.")
-elif wiek <= 18:
-    print("Bilet kosztuje 10 zł.")
-else:
-    czy_student = input("Czy jesteś studentem? (tak/nie): ").strip().lower()
-    if czy_student == "tak":
-        print("Bilet kosztuje 15 zł.")
-    else:
-        print("Bilet kosztuje 20 zł.")
-'''
+# wiek = int(input("Podaj swój wiek: "))
+
+# if wiek <= 4:
+#     print("Wstęp jest bezpłatny.")
+# elif wiek <= 18:
+#     print("Bilet kosztuje 10 zł.")
+# else:
+#     czy_student = input("Czy jesteś studentem? (tak/nie): ").strip().lower()
+#     if czy_student == "tak":
+#         print("Bilet kosztuje 15 zł.")
+#     else:
+#         print("Bilet kosztuje 20 zł.")
+
 
 '''Zadanie 10 - Napisz program porządkowania trzech liczb x, y, z podawanych przez użytkownika. Posortuj
 je od najmniejszej do największej, bez użycia wbudowanych funkcji.'''
-'''
-x = int(input("x: "))
-y = int(input("y: "))
-z = int(input("z: "))
 
-if x > y:
-    x, y = y, x
-if x > z:
-    x, z = z, x
-if y > z:
-    y, z = z, y
-print(x, y, z)
-'''
+# x = int(input("x: "))
+# y = int(input("y: "))
+# z = int(input("z: "))
+
+# if x > y:
+#     x, y = y, x
+# if x > z:
+#     x, z = z, x
+# if y > z:
+#     y, z = z, y
+# print(x, y, z)
+
 
 '''Zadanie 11 - Napisz program rozwiązywania równania kwadratowego 𝑎𝑎𝑥𝑥2 + 𝑏𝑏𝑏𝑏 + 𝑐𝑐 = 0, gdzie a, b i c
 są współczynnikami podawanymi przez użytkownika.'''
-'''
-import math
 
-a = int(input("a: "))
-b = int(input("b: "))
-c = int(input("c: "))
+# import math
 
-delta = b**2 + 4*a*c
-if delta > 0:
-x1 = (b)
-x2 = 
-if delta > 0:
-    elif delta == 0
-else:
+# a = float(input("a: "))
+# b = float(input("b: "))
+# c = float(input("c: "))
 
-print(a)
-'''
+# if a == 0:
+#     print("To nie jest równanie kwadratowe (a=0)!")
+# else:
+#     delta = b**2 - 4*a*c
+#     if delta > 0:
+#         x1 = (-b - delta**0.5) / (2*a)
+#         x2 = (-b + delta**0.5) / (2*a)
+#         print("Dwa rozwiązania: x1 =", x1, "x2 =", x2)
+#     elif delta == 0:
+#         x = -b / (2*a)
+#         print("Jedno rozwiązanie: x =", x)
+#     else:
+#         print("Brak rozwiązań rzeczywistych")
 
-# Zadanie 12 
+''' Zadanie 12 - Napisz program wyznaczania wartości funkcji określonych wzorami dla argumentów
+rzeczywistych podawanych przez użytkownika:'''
 
+# def funkcja_a(x):
+#     if x > 0:
+#         return 2 * x
+#     elif x == 0:
+#         return 0
+#     else:  # x < 0
+#         return -3 * x
 
+# def funkcja_b(x):
+#     if x >= 1:
+#         return x ** 2
+#     else:  # x < 1
+#         return x
 
+# def funkcja_c(x):
+#     if x > 2:
+#         return 2 + x
+#     elif x == 2:
+#         return 8
+#     else:  # x < 2
+#         return x - 4
 
-'''
-'''
+# # Test funkcji
+# x = float(input("Podaj wartość x: "))
+# print(f"a(x) = {funkcja_a(x)}")
+# print(f"b(x) = {funkcja_b(x)}")
+# print(f"c(x) = {funkcja_c(x)}")
+
 
 # Zadanie 13 - Prosty kalkulator
 
-'''
-
-def kalkulator():
-    """
-    Python 3.10+ wprowadził konstrukcję match-case jako odpowiednik switch z innych języków.
-    Tutaj używamy tradycyjnego if-elif jako przykład rozwiązania działającego na starszych wersjach.
-    """
-    try:
-        a = float(input("Podaj pierwszą liczbę: "))
-        b = float(input("Podaj drugą liczbę: "))
-        operacja = input("Podaj operację (+, -, *, /): ")
+# import math
+# def kalkulator():
+#     try:
+#         a = float(input("Podaj pierwszą liczbę: "))
+#         b = float(input("Podaj drugą liczbę: "))
+#         operacja = input("Podaj operację (+, -, *, /): ")
         
-        if operacja == "+":
-            wynik = a + b
-        elif operacja == "-":
-            wynik = a - b
-        elif operacja == "*":
-            wynik = a * b
-        elif operacja == "/":
-            if b == 0:
-                print("Nie można dzielić przez zero!")
-                return
-            wynik = a / b
-        else:
-            print("Nieznana operacja!")
-            return
+#         if operacja == "+":
+#             wynik = a + b
+#         elif operacja == "-":
+#             wynik = a - b
+#         elif operacja == "*":
+#             wynik = a * b
+#         elif operacja == "/":
+#             if b == 0:
+#                 print("Nie można dzielić przez zero!")
+#                 return
+#             wynik = a / b
+#         else:
+#             print("Nieznana operacja!")
+#             return
             
-        print(f"Wynik: {wynik}")
-    except ValueError:
-        print("Podano nieprawidłowe wartości!")
+#         print(f"Wynik: {wynik}")
+#     except ValueError:
+#         print("Podano nieprawidłowe wartości!")
+# kalkulator()
 
 # Zadanie 14 - Sprawdzanie rozszerzenia pliku Excel
-def sprawdz_excel():
-    """
-    Metoda endswith() sprawdza, czy string kończy się podanym ciągiem znaków.
-    Można podać krotkę z wieloma możliwymi zakończeniami.
-    Zwraca True/False.
-    """
-    nazwa_pliku = input("Podaj nazwę pliku: ")
-    rozszerzenia_excel = ('.xlsx', '.xls', '.xlsm')
+
+# def sprawdz_excel():
+#     nazwa_pliku = input("Podaj nazwę pliku: ")
+#     rozszerzenia_excel = ('.xlsx', '.xls', '.xlsm')
     
-    if nazwa_pliku.endswith(rozszerzenia_excel):
-        print("To jest plik Excela")
-    else:
-        print("To nie jest plik Excela")
+#     if nazwa_pliku.endswith(rozszerzenia_excel):
+#         print("To jest plik Excela")
+#     else:
+#         print("To nie jest plik Excela")
 
-# Wywołanie funkcji
-print("\nSortowanie trzech liczb:")
-sortuj_liczby()
+# print("\nSprawdzanie pliku Excel:")
+# sprawdz_excel()
 
-print("\nRozwiązywanie równania kwadratowego:")
-rownanie_kwadratowe()
-
-print("\nKalkulator:")
-kalkulator()
-
-print("\nSprawdzanie pliku Excel:")
-sprawdz_excel()
-
-#LABORATORIUM 2 - ZADANIA 1, 2, 3, 4, 5, 6, 7
+'''LABORATORIUM 2 - ZADANIA 1, 2, 3, 4, 5, 6, 7'''
 
 # Zadanie 1 - Ciągi liczb
 # a) 1 do 100
-
+'''
 for i in range(1, 101):
     print(i, end=", ")
 print()
