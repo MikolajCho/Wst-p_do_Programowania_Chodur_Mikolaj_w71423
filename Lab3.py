@@ -104,13 +104,23 @@
 # print(f"Słowa o długośi większej  niż {s}, to: ", end=" ")
 # print(s, end=" ")
 
-#Zadanie 5
+# #Zadanie 5 typo
 
-zakupy={"chleb":5.0, "maslo":7.0, "czekolada":12.0, "czipsy":12.0, "woda":3.0}
-print(zakupy)
-suma_zakupy = 0
+# zakupy={"chleb":5.0, "maslo":7.0, "czekolada":12.0, "czipsy":12.0, "woda":3.0}
+# print(zakupy)
+# suma_zakupy = 0
 
-for el in zakupy:
-    suma_zakupy += zakupy[el]
-    print(f"{el} za {zakupy[el] zł"})
-print(f"Za akupy zapłacimy: {suma_zakupy}zł.")
+# for el in zakupy:
+#     suma_zakupy += zakupy[el]
+#     print(f"{el} za {zakupy[el] zł"})
+# print(f"Za akupy zapłacimy: {suma_zakupy}zł.")
+
+#Zadanie 7
+zbior_x = {5, 6, 1}
+zbior_y = {5, 6, 1, 2, 3, 8}
+
+print(5 in zbior_x)
+print(zbior_x.issubset(zbior_y))
+print(zbior_y.issubset(zbior_x))
+print(zbior_x.union(zbior_y))
+print(zbior_y.union(zbior_x))
