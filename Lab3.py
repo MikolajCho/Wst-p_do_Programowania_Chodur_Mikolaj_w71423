@@ -49,3 +49,26 @@
 #     b += 1
     
 '''Zadania z labolatorium 3 - '''
+
+#Zadanie 1
+
+imiona = []
+for i in range(4):
+    imie = input(f"Podaj imię osoby {i + 1}: ")
+    imiona.append(imie)
+imiona.sort()
+print("Lista po sortowaniu: ", imiona)
+
+imiona.append(input("Podaj imie numer 5: "))
+imiona.append(input("Podaj imie numer 6: "))
+print("Lista po dodaniu dwóch osób: ", imiona)
+imiona.pop()
+print("Lista po usunięciu ostatniego imiona: ",imiona)
+
+imiona.insert(2, input("Podaj imie osoby do dodania na 3 pozycję: "))
+print("Lista po dodaniu osoby na trzecia pozycje: ", imiona)
+imiona.reverse()
+print("Lista po odwroceniu jkolejnosci: ", imiona)
+
+imiona *= 2
+print("Lista po zdublowaniu: ", imiona)
