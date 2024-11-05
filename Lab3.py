@@ -48,27 +48,69 @@
 #     print(b)
 #     b += 1
     
-'''Zadania z labolatorium 3 - '''
+'''Zadania z labolatorium 3 - 1, 4 '''
 
 #Zadanie 1
 
-imiona = []
-for i in range(4):
-    imie = input(f"Podaj imię osoby {i + 1}: ")
-    imiona.append(imie)
-imiona.sort()
-print("Lista po sortowaniu: ", imiona)
+# imiona = []
+# for i in range(4):
+#     imie = input(f"Podaj imię osoby {i + 1}: ")
+#     imiona.append(imie)
+# imiona.sort()
+# print("Lista po sortowaniu: ", imiona)
 
-imiona.append(input("Podaj imie numer 5: "))
-imiona.append(input("Podaj imie numer 6: "))
-print("Lista po dodaniu dwóch osób: ", imiona)
-imiona.pop()
-print("Lista po usunięciu ostatniego imiona: ",imiona)
+# imiona.append(input("Podaj imie numer 5: "))
+# imiona.append(input("Podaj imie numer 6: "))
+# print("Lista po dodaniu dwóch osób: ", imiona)
+# imiona.pop()
+# print("Lista po usunięciu ostatniego imiona: ",imiona)
 
-imiona.insert(2, input("Podaj imie osoby do dodania na 3 pozycję: "))
-print("Lista po dodaniu osoby na trzecia pozycje: ", imiona)
-imiona.reverse()
-print("Lista po odwroceniu jkolejnosci: ", imiona)
+# imiona.insert(2, input("Podaj imie osoby do dodania na 3 pozycję: "))
+# print("Lista po dodaniu osoby na trzecia pozycje: ", imiona)
+# imiona.reverse()
+# print("Lista po odwroceniu jkolejnosci: ", imiona)
 
-imiona *= 2
-print("Lista po zdublowaniu: ", imiona)
+# imiona *= 2
+# print("Lista po zdublowaniu: ", imiona)
+
+# Zadanie 4
+# lista=["as", "kft", "ktkkkkkkfs"]
+# krotka = tuple(lista)
+
+# print (krotka)
+# suma = 0
+# sk = 0
+# skt = 0
+# s = int(input("podaj minimalny rozmiar słowa"))
+# slowa = []
+
+# for el in krotka:
+#     suma += len(el)
+#     print(suma)
+# print(f"Liczba znakow w krotce to: {suma}")
+# for el in krotka:
+#     for z in el:
+#         if z == "k":
+#             sk += 1
+# print(f"w krotce znaleziono {sk} wystąpienia litery 'k'.")
+
+# if el.find("kt") < 0:
+#     skt += 1
+# print(f"w krotce znalezionao {skt} wystapienia litery 'kt'. ")
+
+# if len(el) >= s:
+#     slowa.append(el)
+# print(slowa)
+# print(f"Słowa o długośi większej  niż {s}, to: ", end=" ")
+# print(s, end=" ")
+
+#Zadanie 5
+
+zakupy={"chleb":5.0, "maslo":7.0, "czekolada":12.0, "czipsy":12.0, "woda":3.0}
+print(zakupy)
+suma_zakupy = 0
+
+for el in zakupy:
+    suma_zakupy += zakupy[el]
+    print(f"{el} za {zakupy[el] zł"})
+print(f"Za akupy zapłacimy: {suma_zakupy}zł.")
