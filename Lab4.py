@@ -114,3 +114,31 @@
 # print(f"Pole trójkąta: {pole_trojkata(-3, 4, 5)}")
 
 #Zadanie 8
+
+# a=float(input("Podaj liczbę a: "))
+# n=float(input("Podaj stopień potęgi: "))
+
+# def Potega(a, n):
+#     if n == 1:
+#         #print("Potega pierwszego stopnia wynosi 1")
+#         return a
+#     else:
+#         #print(f"Potega wynpsi: {a} * Potega(a, n-1)")
+#         return a * Potega(a, n-1)
+# Potega(a, n)
+
+#Zadanie 9
+
+# n=float(input("Podaj liczbę miesięcy: "))
+
+# def Fib(n):
+#     if n == 1 or n == 2:
+#         return 1
+#     else:
+#         return Fib(n-1) + Fib(n-2)
+
+# print(Fib(n))
+
+#Zadanie 10
+
+
